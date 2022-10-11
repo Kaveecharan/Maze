@@ -1,0 +1,34 @@
+@import '../../variables';
+
+.text-animate {
+  display: inline-block;
+  opacity: 0;
+  animation: fadeInDownBig 1s 3s forwards;
+  min-width: 10px;
+  color: $primary-color-light;
+  font-size: 65px;
+  min-width: 10px;
+}
+
+@for $i from 1 through 35 {
+  .text-animate._#{$i} {
+    animation-delay: #{$i / 10}s;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .text-animate{
+      font-size: 35px;
+      margin-top: 10%;
+  }
+}
+
+@media screen and (max-width: 968px) {
+
+  .text-animate{
+      font-size: 45px;
+      margin-top: -10%;
+  }
+}

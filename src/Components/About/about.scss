@@ -1,0 +1,144 @@
+@import '../../variables';
+
+.about-container{
+    background: #E7E9E8;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 10px;
+
+    .about-details{
+        flex: 10;
+        .about-detail{
+            margin: 20px 30px;
+            display: flex;
+            flex-direction: column;
+        }
+        h2{
+            margin: 10px 0 20px 0;
+        }
+
+        input{
+            margin: 5px 0 10px 0;
+            width: 30%;
+            border: none;
+            outline: none;
+            height: 30px;
+            padding-left: 10px;
+            border-radius: 5px;
+        }
+
+        label{
+            font-family: 'Gemunu Libre';
+            color: $primary-color;
+        }
+
+        p{
+            font-family: 'Gemunu Libre';
+            margin: 5px 0 18px 0;
+            font-size: 20px;
+            color: $primary-color;
+        }
+
+    }
+
+        button{
+            background: none;
+            border: none;
+            outline: none;
+            cursor: pointer;
+
+            .faIcon{
+                height: 20px;
+                width: 20px;    
+                margin-left:30px;
+                color: $primary-color;
+            }
+        }
+}
+
+
+.delete-div{
+    display: flex;
+    width: 15%;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 30px;
+
+    h2{
+        margin: 20px;
+        cursor: pointer;
+        color: rgb(167, 4, 26);
+        font-size: 20px;
+    }
+}
+
+
+
+.users-div{
+    margin: 25px;
+    h2{
+        font-size: 30px;
+        padding: 10px 20px;
+        background: #2B0133;
+        color: $secondary-color;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .about-container{
+        .about-details{
+            h2{
+                margin: 10px 0 20px 0;
+                font-size: 18px;
+            }
+    
+            input{
+                font-size: 13px;
+            }
+
+            p{
+                font-size: 16px;
+            }
+    
+        }
+    
+            button{
+    
+                .faIcon{
+                    height: 15px;
+                    width: 15px;    
+                }
+            }
+    }
+    
+    
+    .delete-div{
+        width: 25%;
+    
+        h2{
+            margin: 20px;
+            cursor: pointer;
+            color: rgb(167, 4, 26);
+            font-size: 20px;
+        }
+    }
+    
+    
+    
+    .users-div{
+        margin: 20px;
+        h2{
+            font-size: 20px;
+            padding: 7px 15px;
+            border-radius: 3px;
+        }
+    }
+    
+  }
+  
